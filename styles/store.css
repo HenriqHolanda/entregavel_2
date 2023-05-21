@@ -1,0 +1,137 @@
+@font-face {
+    font-family: customFonts;
+    src: url('../fonts/Graduate-Regular.ttf');
+}
+
+*,html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #8f0b0b;
+    padding: 100px 0 100px 0;
+}
+
+.store {
+    width: 100%;
+    background-image: url('../images/GRIFO - Logo 1.png');
+    background-repeat: no-repeat;
+    background-size: 95%;
+    background-position: center;
+}
+
+.text-store {
+    font-family: customFonts, Arial;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    display: block;
+    text-align: center;
+    margin: 4% 0 9% 0;
+}
+
+.products-store {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: fit-content;
+    row-gap: 15px;
+    column-gap: 15px;
+    margin: 0 10%;
+}
+
+.square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    aspect-ratio: 1;
+    border-width: 1px;
+    border-radius: 15%;
+    border-style: solid;
+    border-color: black;
+}
+
+.square:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+}
+
+.square:active {
+    background-color: white;
+    box-shadow: 2px 2px 2px 1px rgb(255, 255, 255, 0.2);
+}
+
+.product {
+    width: 60%;
+}
+
+.shirt {
+    width: 100%
+}
+
+.product-name {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.product-price {
+    font-size: 1rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+    .text-store {
+        font-size: 1.75rem;
+    }
+
+    .products-store {
+        grid-template-columns: 1fr 1fr;
+        margin: 0 15%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        padding-top: 250px;
+    }
+
+    .text-store {
+        font-size: 1.25rem;
+    }
+
+    .products-store {
+        grid-template-columns: 1fr;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 840px) {
+    .store {
+        width: 840px;
+        margin: auto;
+    }
+
+    .text-store {
+        font-size: 32px;
+    }
+
+    .products-store {
+        grid-template-columns: 211px 211px 211px;
+        width: fit-content;
+        margin: auto;
+    }
+    
+    .square {
+        width: 211px;
+    }
+
+    .product-name {
+        font-size: 16px;
+    }
+    
+    .product-price {
+        font-size: 16px;
+    }
+}

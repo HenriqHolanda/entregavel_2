@@ -1,0 +1,93 @@
+body {
+    padding-top: 100px;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    width: 100%;
+    top: 0px;
+    position: fixed;
+    background-color: black;
+    z-index: 4;
+}
+
+.nav-left {
+    height: 100%;
+    object-fit: contain;
+}
+
+.logo {
+    height: 100%;
+}
+
+.nav-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 50%;
+}
+
+#Destaque{
+    background-color: #8f0b0b;
+    border-radius: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    border-style: groove;
+    border-color: white;
+
+}
+
+.header-font {
+    font-family: "Inter"; 
+    font-weight: 100;
+    font-size: 1.2rem;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.header-font:hover {
+    color: #0000FF;
+}
+
+.insta svg:hover path{
+    fill: #0000FF;
+}
+
+@media screen and (max-width: 800px) {
+    .nav-right {
+        flex: 1;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .header{
+        flex-direction: column;
+        height: 250px;
+        width: 100%;
+    }
+    
+    .nav-left {
+        height: 40%;
+    }
+    
+    .nav-right {
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .header-font {
+        font-size: 1rem;
+    }
+
+    .insta svg {
+        width: 30px;
+    }
+}

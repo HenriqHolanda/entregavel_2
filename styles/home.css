@@ -1,0 +1,158 @@
+*, html {
+    margin:0;
+    padding:0;  
+}
+
+body {
+        padding-top: 100px;
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        padding-top: 250px;
+    }
+}
+
+ @keyframes slideInFromTop {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+    
+
+.grifo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: 1s ease-out 0s 1 slideInFromTop;
+}
+
+.symbol img{
+    position: absolute;
+    margin-top: -45vw;
+    height: 35vw;
+    z-index: 2;
+}
+
+.background img {
+    display: block;
+    vertical-align:bottom;
+    line-height: 0%;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0px;
+    opacity: 0.4;
+    left: 0;
+    z-index: -1;
+    overflow-x: hidden;
+}
+
+.legenda {
+    display: block;
+    margin-top: -15%;
+    top: 0px;
+    font-family: 'Inter', sans-seriff;
+    font-weight: 600;
+    font-size: 3vw;
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fundo {
+    background-color: #8F0B0B;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: -2vw;
+    padding-bottom: 4vw;
+}
+
+.lojinha img {
+    border: 5px solid #000000;
+    background-color: #FFFFFF;
+}
+
+.final{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.fundo img {
+    width: 70%;
+    height: 20vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    margin-top: 2vh;
+    border: 5px solid #000000;
+}
+
+.fundo h1 {
+    margin-top: 8vh;
+}
+
+.fundo p{
+    margin-top: 5vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 2rem;
+    width: 70%;
+    margin-botton: -2vh;
+}
+
+@media only screen and (max-width: 700px) {
+    .nav {
+        width: 70%;
+    }
+    .nav a {
+        font-size: 10px;
+    }
+    .icon svg{
+        width:24px; 
+        height:24px; 
+        margin: -10px;
+    }
+    .background img {
+        height: auto !important;
+    }
+ }
+ @media only screen and (max-width: 1200px) {
+.fundo {
+    background-color: #8F0B0B;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-bottom: 4vw;
+}
+.fundo img {
+    width: 50%;
+    height: 40vw;
+    margin-top: 2vh;
+    border: 5px solid #000000;
+}
+.fundo p {
+    width: 50%;
+    font-size: 1.5rem;
+}
+}
+
+
+.lojinha img:hover {
+    content: url("../images/camisa.png");
+}
+
+.eventos img:hover {
+    content: url("../images/WhatsApp Image 2023-04-05 at 20.58.49.jpeg");
+}
+
+.parcerias img:hover {
+    content: url("../images/Captura de tela de 2023-04-06 17-05-59.png");
+}

@@ -1,0 +1,129 @@
+@font-face {
+    font-family: graduate;
+    src: url('../fonts/Graduate-Regular.ttf');
+}
+
+*,html{
+    margin: 0;            
+    padding: 0;
+}
+
+.Coluna{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+.papiro_zero{
+    border: #8f0b0b;
+    background-color: #8f0b0b;
+    width: fit-content;
+    height: 45vh;
+    display: flex;
+    column-gap: 7.3vw;
+}
+
+.luau{
+    background-color: white;
+    width: fit-content;    
+    height: 45vh;
+    display: flex;
+    column-gap: 7.3vw;
+}
+
+.ime_jam{
+    border: #8f0b0b;
+    background-color: #8f0b0b;
+    width:fit-content;
+    height: 48vh;
+    display: flex;
+    column-gap: 7.3vw;
+}
+
+.imagem_do_papiro{
+    width: 70vw;
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 300px;
+    padding-left: 4vw;
+}
+
+
+.imagem_do_luau{
+   width: 70vw;
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 300px;
+    padding-left: 4vw;
+}
+
+.imagem_da_ime_jam{
+    width: 70vw;
+    height: 48vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 300px;
+    padding-left: 4vw;
+    
+}
+
+.texto_um{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 3.7vh;
+    height: 45vh;
+}
+
+.texto_dois{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 3.7vh;
+    height: 45vh;
+    
+}
+
+.titulo_um{
+    color: white;
+    font-family: graduate;
+    letter-spacing: 7px;
+    font-size: max(20px, 3.6vw);
+      
+}
+
+.latim_um{
+    color: white;
+    font-family: inter, bold; 
+    width: 65%;
+    font-size: max(10px, 1.37vw);
+      
+}
+
+.titulo_dois{
+    color: black;
+    font-family: graduate;
+    letter-spacing: 7px;
+    font-size: max(20px, 3.6vw)
+
+}
+
+.latim_dois{
+    color: black;
+    font-family: inter, bold;
+    width: 65%;
+    font-size: max(10px, 1.37vw);
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        padding-top: 250px;
+    }
+}
