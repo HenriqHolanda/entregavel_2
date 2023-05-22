@@ -99,6 +99,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
+    height: 50px;
 }
 
 .acc-level {
@@ -181,7 +182,7 @@ button {
     color: white;
     padding: 16px;
     display: block;
-    width: 50%;
+    width: 100%;
     border-radius: 2px;
     font-size: 16px;
     text-transform: uppercase;

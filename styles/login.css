@@ -130,7 +130,7 @@ body {
 label {
     display: flex;
     align-items: center;
-    padding: 9px;
+    padding: 12px;
     cursor: pointer;
     background-color: rgb(143, 11,11);
     color: white;

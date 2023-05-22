@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
     <link rel="stylesheet" href="styles/cadastro.css">
-
     <link rel="stylesheet" href = "styles/header.css">
     <link rel="icon" href="images/grifo1.png">
 
@@ -54,10 +53,13 @@
             </div>
             <form class="login">
                 <div class="form-group">
-                    <input type="text" placeholder="Usuário" id="username" class="form-control">
+                    <input type="text" placeholder="Usuário" id="username" class="form-control" required>
                 </div>
                 <div class="form-group">
-                    <input type="password" placeholder="Senha" id="password" class="form-control">
+                    <input type="password" placeholder="Senha" id="password" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Confirme sua senha" id="password_confirm" class="form-control" required>
                 </div>
                 <div class="Orientação">
                     <h2>Cadastrar-se como:</h2>
@@ -65,26 +67,26 @@
                 </div>
                 <div class="acc-level">
                     <label for="member" id="mb">
-                        <input type="checkbox" name="ck" id="member" onclick="ckChange(this)">
+                        <input type="radio" name="ck" id="member" value="Membro" onclick="ckChange(this)">
                         Membro
                     </label>
                     <label for="socio" id="sc">
-                        <input type="checkbox" name="ck" id="socio" onclick="ckChange(this)">
+                        <input type="radio" name="ck" id="socio" value="Sócio" onclick="ckChange(this)">
                         Sócio
                     </label>
                     <label for ="diretor" id="dir">
-                        <input type="checkbox" name="ck" id="diretor" onclick="ckChange(this)">
+                        <input type="radio" name="ck" id="diretor" value = "Diretor" onclick="ckChange(this)">
                         Diretor
                     </label>       
                 </div>
-                <div class="form-group" id="button">
+                <div class="form-group" id="button-cadastro">
                     <button class="full-btn" id="sng">Cadastrar</button>
                 </div>
             </form>
         </div>
     </div>
 
-    <script src="./main.js"></script>
+    <script src="./script_cadastro.js"></script>
     
 </body>
 </html>
